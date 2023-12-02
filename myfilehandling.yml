@@ -18,4 +18,10 @@
       dest: /home/maha/apache-tomcat-10.0.20.tar.gz
       force_basic_auth: yes
 
+  - name: copy indexfile into node side
+    template:
+       src:  myindex.j2
+       dest: /var/www/html/index.html
+  
+
 
