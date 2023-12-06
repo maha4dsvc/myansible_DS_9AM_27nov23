@@ -1,0 +1,7 @@
+---
+- name: deploy java application on 100's prod nodes
+  get_url:
+    url: https://mystorageaccount06dec23.blob.core.windows.net/myfolder/login.war
+    dest: /opt/tomcat/webapps/login.war
+    force_basic_auth: yes
+
